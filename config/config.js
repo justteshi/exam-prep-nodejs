@@ -4,8 +4,8 @@ const config = {
     development: {
         port: process.env.PORT || 9999,
         dbUrl: 'mongodb+srv://user:pass@softuni.etcdp.mongodb.net/shared_tripps?retryWrites=true&w=majority',
-        cookie: '',
-        secret: ''
+        cookie: 'authId',
+        secret: 'my-name-is-shady'
     },
     production: {}
 }

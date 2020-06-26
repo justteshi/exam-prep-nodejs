@@ -10,10 +10,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
 
+                {{#if isLoggedIn}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/tripp/shared-tripps">Shared Tripp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/logout">Logout as [{{ userMail }}]</a>
+                </li>
+                {{else}}
                 <li class="nav-item">
                     <a class="nav-link" href="/user/login">Login</a>
                 </li>
-
+                {{/if}}
             </ul>
         </div>
 
